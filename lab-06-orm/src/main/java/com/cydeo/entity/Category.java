@@ -20,6 +20,10 @@ public class Category {
     private Long id;
     private String name;
 
+    /*
+    Category and Product has @ManyToMany relationship.
+    We declared Category as Owner, because it is less and product could be thousands.
+     */
 
 
 }
