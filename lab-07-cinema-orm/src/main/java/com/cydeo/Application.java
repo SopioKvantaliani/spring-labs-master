@@ -15,9 +15,9 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-//    @Bean //should be Bean. This method tells "flyway" where it will create 3rd table to track changes in DB. flyWay looks that information.
-//    public MigrateResult migrateResult (DataSource dataSource){
-//        return Flyway.configure().baselineOnMigrate(true).dataSource(dataSource).load().migrate();
-//    }
+    @Bean //should be Bean. This method tells "flyway" where it will create 3rd table to track changes in DB. flyWay looks that information.
+    public MigrateResult migrateResult (DataSource dataSource){
+        return Flyway.configure().baselineOnMigrate(true).dataSource(dataSource).load().migrate();
+    }
 
 }
