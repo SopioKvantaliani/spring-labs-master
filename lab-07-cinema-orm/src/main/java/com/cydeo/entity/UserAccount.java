@@ -1,5 +1,6 @@
 package com.cydeo.entity;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -25,5 +26,14 @@ public class UserAccount extends BaseEntity{
         this.email = email;
         this.password = password;
         this.username = username;
+    }
+
+    @Override
+    public String toString() {
+        return "UserAccount{" +
+                "email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", username='" + username + '\'' +
+                '}';
     }
 }

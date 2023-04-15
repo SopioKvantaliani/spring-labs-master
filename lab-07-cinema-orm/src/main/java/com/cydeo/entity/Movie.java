@@ -2,6 +2,7 @@ package com.cydeo.entity;
 
 import com.cydeo.enums.State;
 import com.cydeo.enums.Type;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -15,6 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
+@Data
 public class Movie extends BaseEntity{
 
     private String name;

@@ -1,6 +1,7 @@
 package com.cydeo.entity;
 
 import com.cydeo.enums.Role;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
