@@ -15,7 +15,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Getter
 @Setter
-@Data
 public class Ticket extends BaseEntity{
 
     @Column(columnDefinition = "TIMESTAMP")
@@ -32,5 +31,14 @@ public class Ticket extends BaseEntity{
         this.dateTime = dateTime;
         this.seatNumber = seatNumber;
         this.rowNumber = rowNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "seatNumber=" + seatNumber +
+                ", rowNumber=" + rowNumber +
+                ", dateTime=" + dateTime +
+                '}';
     }
 }

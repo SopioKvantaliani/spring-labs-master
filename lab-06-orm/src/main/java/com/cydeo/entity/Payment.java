@@ -1,10 +1,13 @@
 package com.cydeo.entity;
 
+import com.cydeo.enums.PaymentMethod;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import java.math.BigDecimal;
 
 @Entity
@@ -14,6 +17,7 @@ import java.math.BigDecimal;
 public class Payment extends BaseEntity{
 
     private BigDecimal paidPrice;
-    private String paymentMethod;
+    @Enumerated (EnumType.STRING)
+    private PaymentMethod paymentMethod;
 
 }

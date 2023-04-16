@@ -15,6 +15,7 @@ public interface AccountRepository extends JpaRepository <AccountDetails, Long> 
 
     //Write a derived query to list all accounts with age lower than or equal to a specific value
     List <AccountDetails> findByAgeIsLessThanEqual(Integer age);
+    //starts => find, get, read, count, remove, delete, exists(check if true of false)
 
     //Write a derived query to list all accounts with a specific role
      List <AccountDetails> findByRoleEquals(Enum role);

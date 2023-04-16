@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Getter
 @Setter
-@Data
 public class MovieCinema extends BaseEntity{
 
     @Column(columnDefinition = "TIMESTAMP")
@@ -26,5 +25,12 @@ public class MovieCinema extends BaseEntity{
 
     public MovieCinema(LocalDateTime dateTime) {
         this.dateTime = dateTime;
+    }
+
+    @Override
+    public String toString() {
+        return "MovieCinema{" +
+                "dateTime=" + dateTime +
+                '}';
     }
 }
